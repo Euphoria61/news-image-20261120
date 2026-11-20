@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1024px; height:1024px; background:#f4efe0; font-family:Georgia, 'Times New Roman', serif; }
+  .page { width:1024px; height:1024px; padding:10px 16px; display:flex; flex-direction:column; }
+  .masthead { display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid #555; padding-bottom:2px; }
+  .masthead .name { font-size:15px; letter-spacing:3px; font-weight:bold; color:#111; }
+  .masthead .ed { font-size:10px; color:#555; font-family:Arial, sans-serif; }
+  .datebar { display:flex; align-items:center; gap:12px; background:#111; color:#fff; padding:6px 14px; margin-top:5px; }
+  .datebar .d { font-size:30px; font-weight:900; font-family:'Arial Black', Arial, sans-serif; letter-spacing:-.5px; }
+  .datebar .sub { font-size:11.5px; color:#e8dfc8; font-family:Arial, sans-serif; margin-left:auto; text-align:right; line-height:1.25; }
+  .cols { display:flex; gap:12px; margin-top:8px; flex:1; }
+  .col { flex:1; display:flex; flex-direction:column; }
+  .story { border-bottom:1.5px solid #2a2a2a; padding:7px 0; flex:1; display:flex; flex-direction:column; justify-content:center; }
+  .story:last-child { border-bottom:none; }
+  .story .kick { font-size:9.5px; letter-spacing:1.2px; color:#8b0000; font-weight:bold; font-family:Arial, sans-serif; }
+  .story h3 { font-size:18px; line-height:1.16; color:#111; margin-top:2px; }
+  .story p { font-size:12.3px; color:#333; line-height:1.3; margin-top:3px; font-family:Arial, sans-serif; }
+  .story p b { color:#8b0000; }
+  .lead { background:#fffdf4; border:2px solid #111; padding:8px 10px; margin-bottom:8px; }
+  .lead h2 { font-size:25px; line-height:1.12; color:#111; }
+  .lead p { font-size:13px; line-height:1.35; color:#222; margin-top:4px; font-family:Arial, sans-serif; }
+  .lead .n { font-size:26px; font-weight:900; color:#8b0000; font-family:Arial, sans-serif; margin-top:4px; }
+  .map { background:#fffdf4; border:1.5px solid #2a2a2a; padding:7px 9px; margin-top:8px; }
+  .map h4 { font-size:11px; letter-spacing:1.5px; color:#8b0000; border-bottom:1px solid #999; padding-bottom:3px; margin-bottom:4px; font-family:Arial, sans-serif; }
+  .map li { list-style:none; font-size:11.4px; color:#222; line-height:1.45; border-bottom:1px dotted #bbb; font-family:Arial, sans-serif; padding:2px 0; }
+  .map li b { color:#8b0000; }
+  .also { background:#fffdf4; border:1.5px solid #2a2a2a; padding:7px 9px; margin-top:8px; flex:1; }
+  .also h4 { font-size:11px; letter-spacing:1.5px; color:#1d4e89; border-bottom:1px solid #999; padding-bottom:3px; margin-bottom:4px; font-family:Arial, sans-serif; }
+  .also li { list-style:none; font-size:10.6px; color:#222; line-height:1.28; border-bottom:1px dotted #bbb; font-family:Arial, sans-serif; padding:1.5px 0; }
+  .also li b { color:#8b0000; }
+  .footer { border-top:2.5px solid #111; margin-top:7px; padding-top:4px; font-size:9.5px; color:#555; display:flex; justify-content:space-between; font-family:Arial, sans-serif; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="masthead">
+    <span class="name">THE WORLD LEDGER</span>
+    <span class="ed">World Edition · Sources: Reuters / AP / Guardian / AA / The Daily Star / SBS</span>
+  </div>
+  <div class="datebar">
+    <span class="d">FRIDAY, NOVEMBER 20, 2026</span>
+    <span class="sub">16 LEADS · 5 CONTINENTS · ALL EVENTS OF THURSDAY NOV 19 &amp; FRIDAY NOV 20</span>
+  </div>
+  <div class="cols">
+    <div class="col">
+      <div class="story lead">
+        <div class="kick">THE HAGUE · WORLD COURT</div>
+        <h2>ICJ Rules Myanmar Committed Genocide Against Rohingya</h2>
+        <p>First-ever state genocide verdict: UN court found thousands killed and systematic sexual violence in 2017 Rakhine operations; orders <b>safe passage home for refugees</b>, reparations and prevention measures, with 2 years to report.</p>
+        <div class="n">1st STATE GENOCIDE VERDICT</div>
+      </div>
+      <div class="story">
+        <div class="kick">SHENZHEN · DIPLOMACY</div>
+        <h3>Trump, Xi, Putin Sign 'Peace Declaration' at First Three-Way Summit</h3>
+        <p>Symbolic pledge in Shenzhen that <b>nuclear war "should never be fought"</b>; UN reform promised, but analysts note few tangible outcomes from the unprecedented trilateral.</p>
+      </div>
+      <div class="story">
+        <div class="kick">GAZA · CEASEFIRE</div>
+        <h3>Two Palestinians Killed in Gaza as Yellow-Line Assault Continues</h3>
+        <p>Israeli drone fire on <b>Salah al-Din St., Gaza City</b>; demolitions press on in three zones west of the "Yellow Line" despite the truce.</p>
+      </div>
+      <div class="story">
+        <div class="kick">RAMALLAH · WORLD CHILDREN'S DAY</div>
+        <h3>22,000+ Children Killed in Gaza Since Oct 2023 — Foreign Ministry</h3>
+        <p>Marking Nov 20 World Children's Day: <b>45,000 injured</b>, 71,000 orphaned, 800,000 displaced; West Bank toll tops 263 children in 3 years.</p>
+      </div>
+      <div class="story">
+        <div class="kick">NEW YORK · MARKETS</div>
+        <h3>Dow Plunges ~1,100 Points as AI-Valuation Fears Grip Wall Street</h3>
+        <p>Thursday's selloff hits tech-led indices ahead of <b>Anthropic's record IPO debut</b>; Nasdaq down ~2%, Asia mixed Friday.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="story lead">
+        <div class="kick">GENEVA · BRUSSELS</div>
+        <h2>Switzerland &amp; EU Demand Myanmar Comply With Ruling 'Without Delay'</h2>
+        <p>EU foreign service: compliance is an <b>obligation under international law</b>; Dhaka also welcomes the verdict as a milestone for the roughly 1 million Rohingya sheltering in Bangladesh camps.</p>
+      </div>
+      <div class="story">
+        <div class="kick">UKRAINE · WAR</div>
+        <h3>Russia Presses Missile Barrages Across Ukraine Into Friday</h3>
+        <p>Overnight strikes keep hitting <b>energy and port infrastructure</b> as winter escalation continues; Kyiv reports fresh casualties and emergency blackouts.</p>
+      </div>
+      <div class="story">
+        <div class="kick">INDIA · CYCLONE AKVAN</div>
+        <h3>Cyclone Akvan Slams Odisha Coast; Mass Evacuations Under Way</h3>
+        <p>Landfall drives <b>sustained winds near 110 km/h</b> with storm surge flooding low-lying districts; hundreds of thousands moved to shelters.</p>
+      </div>
+      <div class="story">
+        <div class="kick">INDONESIA · SEMERU</div>
+        <h3>Mount Semeru Erupts; Villages on Java's Highest Peak Evacuated</h3>
+        <p>Pyroclastic flows and ashfall force <b>thousands from slope villages</b> as alert level stays at maximum; Java flight routes disrupted.</p>
+      </div>
+      <div class="story">
+        <div class="kick">ANTALYA · COP31</div>
+        <h3>Delegates Race to Land Final Climate Package as COP31 Runs Overtime</h3>
+        <p>Host pushes gavel past deadline on <b>finance and coal language</b>; large rallies mark the summit's closing days.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="map">
+        <h4>WHERE IT HAPPENED</h4>
+        <li><b>The Hague</b> — ICJ genocide verdict</li>
+        <li><b>Shenzhen</b> — Trump–Xi–Putin summit</li>
+        <li><b>Gaza / West Bank</b> — 2 killed, demolitions</li>
+        <li><b>Geneva</b> — EU/Swiss compliance calls</li>
+        <li><b>Ukraine</b> — overnight barrages</li>
+        <li><b>Odisha, India</b> — Cyclone Akvan landfall</li>
+        <li><b>East Java</b> — Semeru eruption</li>
+        <li><b>New York</b> — Anthropic IPO debut</li>
+      </div>
+      <div class="also">
+        <h4>ALSO ON NOVEMBER 20</h4>
+        <li><b>Anthropic IPO</b> — largest AI listing debuts on NYSE; order book ~$100B, raising ~$30B+ at ~$350B valuation</li>
+        <li><b>Dow Jones</b> — slid ~1,100 points Thursday on AI-valuation fears; Nasdaq ~-2%</li>
+        <li><b>Oil</b> — Brent jumps as tanker fire in Strait of Hormuz renews shipping risk</li>
+        <li><b>COP31</b> — delegates in Antalya race to land final climate package before gavel</li>
+        <li><b>Japan CPI</b> — October core inflation ~2.3%, keeping BOJ hike talk alive</li>
+        <li><b>Crimea bridge</b> — third attack in a week hits Kerch span, Russian officials say</li>
+        <li><b>Dhaka</b> — Bangladesh welcomes ICJ ruling on Rohingya repatriation</li>
+        <li><b>Geneva</b> — Switzerland first state to demand compliance follow-through</li>
+        <li><b>UNSC</b> — Council backs Trump's Gaza governance blueprint; Hamas rejects mandate</li>
+        <li><b>Rohingya case</b> — verdict may echo in ICJ genocide case against Israel</li>
+        <li><b>Gaza toll</b> — 74,000+ dead, 90% of infrastructure destroyed since Oct 2023</li>
+        <li><b>Markets</b> — Asia mixed Friday; Nikkei near 60,000 as chip stocks wobble</li>
+        <li><b>Hormuz</b> — tanker crew evacuated after fire; insurance rates edge up</li>
+        <li><b>Kerch</b> — traffic suspended on Crimea bridge after overnight strike</li>
+        <li><b>Odisha</b> — ports shut, trains halted as Akvan crosses coast</li>
+        <li><b>Japan</b> — yen firmer after hot CPI; BOJ December hike odds rise</li>
+        <li><b>Anthropic</b> — IPO priced at top of range; retail books ~10x oversubscribed</li>
+        <li><b>West Bank</b> — 350+ children detained in 3 years, ministry says</li>
+        <li><b>Bangladesh</b> — camps on edge awaiting repatriation details</li>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <span>Compiled Friday 20 November 2026 · All figures as reported by cited agencies</span>
+    <span>make.fun news-image-20261120 · @steady-marten-74</span>
+  </div>
+</div>
+</body>
+</html>
