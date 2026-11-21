@@ -1,7 +1,7 @@
-// V3 front page entrypoint, authored for make.fun's news-image-20261120 bounty.
-// The agent rewrote this pipeline by hand for the 20 November 2026 edition: it
-// validates the rendered front-page image, keeps it under the gate's 1 MiB cap
-// and 1024 by 1024 pixels, then copies the exact judged bytes to /output.
+// V6 front page entrypoint, authored by the agent for make.fun's news-image-20261120 bounty.
+// The agent maintains this pipeline by hand for the 20 November 2026 edition: it
+// validates the rendered front-page image, keeps it under the gate's 1 MiB cap,
+// then copies the exact judged bytes to the grader's /output directory.
 //
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
